@@ -1,0 +1,96 @@
+header {
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+
+ .header_container {
+     text-align: center;
+     height: 100%;
+     position: relative;
+ }
+
+ /* ********** CTA *************** */
+ .cta {
+     margin-top: 2.5rem;
+     display: flex;
+     justify-content: center;
+     margin-bottom: 3rem;
+ }
+
+ .cta1 {
+     margin-right: 5px;
+ }
+
+ .cta2 {
+     margin-left: 5px;
+ }
+
+ /* %%%%%%%% HEADER SOCIALS %%%%%%%%%% */
+ .header_socials {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 0.8rem;
+     position: absolute;
+     left: 0;
+     bottom: 3rem;
+ }
+
+ .header_socials::after {
+     content: '';
+     width: 1px;
+     height: 2rem;
+     background: var(--color-primary);
+ }
+
+ /* &&&&&&&&&& IMAGE ME ^^^^^^^^^^^^^^^^^^ 
+ .meImg {
+     background: linear-gradient(var(--color-primary), transparent);
+     width: 22rem;
+     object-fit: cover;
+     height: 30rem;
+     position: absolute;
+     left: calc(50% - 11rem);
+     /* transform: translatex(-50%);
+    margin-top: 4rem;
+    border-radius: 12rem 12rem 0 0; 
+    overflow: hidden;
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
+ }
+*/
+ .meImg2 {
+     height: 27rem;
+     max-width: 22rem;
+     margin-top: 5rem;
+     border-radius: 9rem 9rem 0 0;
+     margin: 0 auto;
+ }
+ /* $$$$$$$$$$ SCROLL DOWN $$$$$$$$$$$$ */
+ .scroll_down {
+     position: absolute;
+     right:0;
+     bottom: 5rem;
+     transform: rotate(90deg);
+     font-weight: 200;
+     font-size: 0.9rem;
+ }
+
+ /* *********** MEDIA QUERY TABLET ********** */
+ @media screen and (max-width: 1024px){
+     header{
+         height: 68vh;
+     }
+ }
+
+ /* ******** MEDIA QUERY MOBILE ********** */
+ @media screen and (max-width: 600px){
+     header{
+         height: 100vh;
+     }
+
+     .header_socials,
+     .scroll_down {
+         display: none;
+     }
+ }
